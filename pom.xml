@@ -14,6 +14,7 @@
         <module>spring_02_di_base_type</module>
         <module>spring_02_di_constructor</module>
         <module>spring_02_di_autoware</module>
+        <module>spring_02_di_gather</module>
     </modules>
 
     <properties>
@@ -22,4 +23,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.10.RELEASE</version>
+        </dependency>
+    </dependencies>
 </project>
