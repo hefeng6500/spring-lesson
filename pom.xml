@@ -18,11 +18,13 @@
         <module>spring_03_third_party_bean</module>
         <module>spring_03_third_party_properties</module>
         <module>spring_04_core_container</module>
+        <module>spring_05_annotation</module>
+        <module>spring_05_pure_annotation</module>
     </modules>
 
     <properties>
-        <maven.compiler.source>18</maven.compiler.source>
-        <maven.compiler.target>18</maven.compiler.target>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
