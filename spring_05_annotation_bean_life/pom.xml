@@ -2,26 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-lesson</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>spring-lesson</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>sping_01_ioc</module>
-        <module>spring_02_di</module>
-        <module>spring_02_di_base_type</module>
-        <module>spring_02_di_constructor</module>
-        <module>spring_02_di_autoware</module>
-        <module>spring_02_di_gather</module>
-        <module>spring_03_third_party_bean</module>
-        <module>spring_03_third_party_properties</module>
-        <module>spring_04_core_container</module>
-        <module>spring_05_annotation</module>
-        <module>spring_05_pure_annotation</module>
-        <module>spring_05_annotation_bean_life</module>
-    </modules>
+    <artifactId>spring_05_annotation_bean_life</artifactId>
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
@@ -35,5 +23,12 @@
             <artifactId>spring-context</artifactId>
             <version>5.2.10.RELEASE</version>
         </dependency>
+
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.2</version>
+        </dependency>
     </dependencies>
+
 </project>
