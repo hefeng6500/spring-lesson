@@ -22,6 +22,7 @@
         <module>spring_05_pure_annotation</module>
         <module>spring_05_annotation_bean_life</module>
         <module>spring_05_annotation_di</module>
+        <module>spring_05_annotation_di_02</module>
     </modules>
 
     <properties>
