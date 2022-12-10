@@ -10,6 +10,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/spring_05_annotation_pure/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_15_spring_mybatis/pom.xml" />
       </set>
     </option>
   </component>
