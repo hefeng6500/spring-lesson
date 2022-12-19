@@ -29,6 +29,7 @@
         <module>aop_my_01</module>
         <module>aop_my_02</module>
         <module>aop_my_03</module>
+        <module>aop_my_04</module>
     </modules>
 
     <properties>
