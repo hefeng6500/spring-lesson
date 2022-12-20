@@ -35,7 +35,14 @@ public class MyAdvice {
 //        但是当需要修改原始方法的参数时，就只能采用带有参数的方法
 //        有了这个特性后，我们就可以在环绕通知中对原始方法的参数进行拦截过滤，避免由于参数的问题导致程序无法正确运行，保证代码的健壮性。
         args[0] = 222;
-        Object ret = pjp.proceed(args);
+        Object ret = null;
+
+        try{
+            ret = pjp.proceed(args);
+        } catch (Throwable throwable) {
+            System.out.println("error");
+            throwable.printStackTrace();
+        }
         System.out.println("环绕通知获取返回值： " + ret);
         return ret;
     }
@@ -45,8 +52,8 @@ public class MyAdvice {
     }
 
 
-    @AfterThrowing("pt()")
-    public void afterThrowing() {
-        System.out.println("afterThrowing advice ...");
+    @AfterThrowing(value = "pt()", throwing = "throwable")
+    public void afterThrowing(Throwable throwable) {
+        System.out.println("afterThrowing advice ..." + throwable);
     }
 }
