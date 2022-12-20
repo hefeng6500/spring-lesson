@@ -36,11 +36,12 @@ public class MyAdvice {
 //        有了这个特性后，我们就可以在环绕通知中对原始方法的参数进行拦截过滤，避免由于参数的问题导致程序无法正确运行，保证代码的健壮性。
         args[0] = 222;
         Object ret = pjp.proceed(args);
+        System.out.println("环绕通知获取返回值： " + ret);
         return ret;
     }
-    @AfterReturning("pt()")
-    public void afterReturning() {
-        System.out.println("afterReturning advice ...");
+    @AfterReturning(value = "pt()", returning = "ret")
+    public void afterReturning(JoinPoint jp, Object ret) {
+        System.out.println("afterReturning advice ..." + ret);
     }
 
 
